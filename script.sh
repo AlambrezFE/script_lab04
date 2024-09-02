@@ -29,7 +29,7 @@ services:
     depends_on:
       - python-api
     ports:
-      - "5270:8080"
+      - "5143:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     networks:
