@@ -14,7 +14,7 @@ services:
   python-api:
     build:
       context: ./python-api
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile  
     container_name: python-api
     ports:
       - "5000:5000"
@@ -38,6 +38,7 @@ services:
 networks:
   app-network:
     driver: bridge
+
 EOF
 
 echo "Construyendo y ejecutando los contenedores con Docker Compose..."
