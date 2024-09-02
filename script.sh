@@ -14,7 +14,7 @@ services:
   python-api:
     build:
       context: ./python-api
-      dockerfile: Dockerfile.python
+      dockerfile: Dockerfile
     container_name: python-api
     ports:
       - "5000:5000"
@@ -24,7 +24,7 @@ services:
   dotnet-api:
     build:
       context: ./dotnet-api
-      dockerfile: Dockerfile.api
+      dockerfile: Dockerfile
     container_name: dotnet-api
     depends_on:
       - python-api
