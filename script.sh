@@ -29,7 +29,7 @@ services:
     depends_on:
       - python-api
     ports:
-      - "80:80"
+      - "5270:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     networks:
@@ -44,4 +44,3 @@ EOF
 echo "Construyendo y ejecutando los contenedores con Docker Compose..."
 docker-compose up --build -d
 
-echo "¡Listo! Las imágenes han sido construidas y los contenedores están en ejecución."
